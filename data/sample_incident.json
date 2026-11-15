@@ -1,0 +1,15 @@
+{
+  "symptom": "frontend",
+  "spans": [
+    {"span_id": "1", "parent_id": null, "service": "frontend"},
+    {"span_id": "2", "parent_id": "1",  "service": "orders"},
+    {"span_id": "3", "parent_id": "2",  "service": "db"},
+    {"span_id": "4", "parent_id": "1",  "service": "auth"}
+  ],
+  "metrics": {
+    "frontend": [100, 102, 98, 101, 99, 100, 180, 260, 350],
+    "orders":   [50, 51, 49, 50, 52, 50, 120, 200, 290],
+    "db":       [10, 11, 10, 9, 10, 11, 80, 160, 250],
+    "auth":     [20, 21, 19, 20, 20, 21, 20, 19, 20]
+  }
+}
